@@ -1,0 +1,32 @@
+<aside class="sidebar {% if page.push_sidebar_down %}push{% endif %}">
+	<div><a class="editor-link btn" href="cloudcannon:collections/_data/sidebar.yml" class="btn"><strong>&#9998;</strong> Edit sidebar</a></div>
+	
+	<!--HIDE THIS
+	<div class="author">
+		<p>
+			<a href="{{ site.baseurl }}/about/">
+				<img src="{{ site.baseurl }}{{ site.data.sidebar.author_image }}" alt="author" class="author">
+			</a>
+		</p>
+		<p>{{ site.data.sidebar.description_markdown | markdownify }}</p>
+	</div>
+
+	<div class="social-icons">
+		<a target="_blank" href="https://facebook.com/{{ site.data.sidebar.facebook }}">{% include social-icon.html icon="Facebook" %}</a>
+		<a target="_blank" href="https://twitter.com/{{ site.data.sidebar.twitter }}">{% include social-icon.html icon="Twitter" %}</a>
+		<a target="_blank" href="https://pinterest.com/{{ site.data.sidebar.pinterest }}">{% include social-icon.html icon="Pinterest" %}</a>
+		<a target="_blank" href="https://www.instagram.com/{{ site.data.sidebar.instagram }}">{% include social-icon.html icon="Instagram" %}</a>
+		<a target="_blank" href="{{ site.baseurl }}/feed.xml">{% include social-icon.html icon="RSS" %}</a>
+	</div>
+	
+	-->
+
+	<form action="{{ site.newsletter_action }}" method="post">
+		<h3>Get Email Updates</h3>
+		<p>New articles & tutorials sent straight to your inbox.</p>
+		<input type="text" name="FNAME" placeholder="First Name">
+		<input type="text" name="EMAIL" placeholder="Email Address">
+		<input type="submit" value="Submit">
+		<h6>We never send spam or share your information.</h6>
+	</form>
+</aside>

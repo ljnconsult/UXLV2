@@ -1,0 +1,88 @@
+# ----
+# Site
+
+title: UX Lessons
+url: "http://www.uxlessons.com"
+baseurl:
+google_analytics_key: UA-112395338-1
+newsletter_action: https://uxlessons.us17.list-manage.com/subscribe/post?u=8d4706839d3db929660ffd0ea&amp;id=6b5f0841c6
+disqus_shortname: uxlessons
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: UX Lessons Blog
+author:
+  name:
+  email: john@uxlessons.com
+  twitter: ux_lessons # twitter username without the @ symbol
+social:
+  name: UX Lessons
+  links:
+    - https://github.com/CloudCannon/treat-jekyll-template
+
+# -----
+# Build
+
+paginate: 10
+paginate_path: "/:num/"
+permalink: pretty
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      push_sidebar_down: true
+      print_stylesheet: true
+      comments: true
+      _options:
+        content:
+          width: 1560
+          height: 2000
+        featured_image:
+          width: 1560
+          height: 2000
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "index.html"
+    values:
+      layout: "default"
+      push_sidebar_down: true
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-paginate
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+# -----------
+# CloudCannon
+
+social_icons:
+  - Facebook
+  - Google Plus
+  - Instagram
+  - LinkedIn
+  - Pinterest
+  - Tumblr
+  - Twitter
+  - YouTube
+  - RSS
+
+_options:
+  author_image:
+    width: 400
+    height: 400
